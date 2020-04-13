@@ -29,10 +29,17 @@ en este formulario . Se puede hacer más de una vez, pero finalmente se probará
 ## Material Sugerido
 
 https://zeroturnaround.com/rebellabs/git-commands-and-best-practices-cheat-sheet/
+
 https://www.udacity.com/course/how-to-use-git-and-github--ud775
+
 https://zeroturnaround.com/rebellabs/java-collections-cheat-sheet/
+
 https://zeroturnaround.com/rebellabs/java-8-streams-cheat-sheet/
+
 https://zeroturnaround.com/rebellabs/java-8-best-practices-cheat-sheet/
+
 https://zeroturnaround.com/rebellabs/java-generics-cheat-sheet/
+
 https://zeroturnaround.com/rebellabs/junit-cheat-sheet/
+
 https://github.com/dds-utn/links-utiles -> Herramientas tecnológicas
