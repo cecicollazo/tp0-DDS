@@ -2,36 +2,69 @@ package tp0;
 
 import java.util.*;
 
-public class operacionEgreso {
-	ArrayList<Item> items;
-	float costo;
-	boolean operacionCerrada = false;
-	boolean generaRemito = false;
+public class OperacionEgreso {
+	private ArrayList<Item> items;
+	private float costo;
+	private boolean operacionCerrada = false;
+	private boolean generaRemito = false;
+
+	public ArrayList<Item> getItems() {
+		return items;
+	}
+
+	public void setItems(ArrayList<Item> items) {
+		this.items = items;
+	}
+	
+	public float getCosto() {
+		return costo;
+	}
+
+	public void setCosto(float costo) {
+		this.costo = costo;
+	}
+
+	public boolean isOperacionCerrada() {
+		return operacionCerrada;
+	}
+
+	public void setOperacionCerrada(boolean operacionCerrada) {
+		this.operacionCerrada = operacionCerrada;
+	}
+
+	public boolean isGeneraRemito() {
+		return generaRemito;
+	}
+
+	public void setGeneraRemito(boolean generaRemito) {
+		this.generaRemito = generaRemito;
+	}
 	
 	public void cargarItem(Item item) {
-		if (!operacionCerrada) {
-			items.add(item);
+		if (!this.isOperacionCerrada()) {
+			this.getItems().add(item);
 		}
 	}
 	
 	public float calcularValor() {
-		if (!operacionCerrada) {
-			costo = 0;
-			items.stream().forEach((Item item) -> costo += item.precioActual());
-			return costo;
+		if (!this.isOperacionCerrada()) {
+			this.costo = 0;
+			this.getItems().stream().forEach((Item item) -> this.setCosto(this.getCosto() + item.getPrecioActual()));
+			return this.costo;
 		}
 		else {
-			return costo;	
+			return this.costo;	
 		}
 	}
 	
 	public void cerrarOperacion() {
-		operacionCerrada = true;
+		this.setOperacionCerrada(true);
 	}
 	
 	public void verificarSiGeneraRemito() {
-		if (items.stream().allMatch((Item item) -> item.tipo() == "articulo")) {
-			generaRemito = true;
+		if (this.getItems().stream().allMatch((Item item) -> item.getTipo() == "articulo")) {
+			this.setGeneraRemito(true);
 		}
 	}
+
 }

@@ -1,22 +1,30 @@
 package tp0;
 
 public class Servicio implements Item {
-	public String tipo = "servicio";
-	public float precioActual;
+	private String tipo = "servicio";
+	private float precioActual;
 	
-	public float precioActual() {
-		return precioActual;
-	}
-	
-	public String tipo() {
+	public String getTipo() {
 		return tipo;
 	}
-	
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public float getPrecioActual() {
+		return precioActual;
+	}
+
+	public void setPrecioActual(float precioActual) {
+		this.precioActual = precioActual;
+	}
+
 	public Servicio(float precio) {
-		precioActual = precio;
+		this.precioActual = precio;
 	}
 	
 	public void cambiarPrecio(float precioNuevo) {
-		precioActual = precioNuevo;
+		this.precioActual = precioNuevo;
 	}
 }
