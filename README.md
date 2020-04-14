@@ -1,4 +1,9 @@
-# Objetivos
+# Diagrama de Clases
+
+![alt tag](https://github.com/cecicollazo/tp0-DDS/blob/master/Diagrama%20de%20clases.png)
+
+
+## Objetivos
 
 * Puesta en marcha del ambiente de desarrollo
 * Repasar / familiarizarse con las tecnologías básicas a utilizar
