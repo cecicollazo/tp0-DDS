@@ -2,6 +2,10 @@
 
 ![alt tag](https://github.com/cecicollazo/tp0-DDS/blob/master/Diagrama%20de%20clases.png)
 
+# Aviso
+
+Los test fallan debido a que el metodo con el before(init) no se puede ejecutar correctamente. El metodo
+que falla dentro del init es operacion.cargarItem(item), no logre descifrar porque falla ese metodo.
 
 ## Objetivos
 
